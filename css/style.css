@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,900&display=swap');
+*{
+    font-family: 'Poppins',cursive;
+}
+body{
+    color: azure;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    overflow-x: hidden; /* Evita el scroll horizontal */
+    margin: 0 auto;
+}
+.greetings{
+    font-size: 6rem;
+    font-weight: 900;
+    max-width: 90vw;
+    line-height: 1.2;
+    text-align: center;
+}
+.greetings > span{
+    animation: glow 2.5s ease-in-out infinite;
+}
+@keyframes glow{
+    0%, 100%{
+        color: #fff;
+        text-shadow: 0 0 12px #ff0000, 0 0 50px #ff0000, 0 0 100px #ff0000;
+    }
+    10%, 90%{
+        color: #696565;
+        text-shadow: none;
+    }
+}
+.greetings > span:nth-child(2){
+    animation-delay: .2s ;
+}
+.greetings > span:nth-child(3){
+    animation-delay: .4s ;
+}
+.greetings > span:nth-child(4){
+    animation-delay: .6s;
+}
+.greetings > span:nth-child(5){
+    animation-delay: .8s;
+}
+
+.description{
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    max-width: 10000px;
+    text-align: center;
+}
+
+.button a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: #111;
+}
+
+@media screen and (max-width:574px){
+    .greetings{
+        display: block;
+        font-size: 3rem;
+        font-weight: 500;
+        text-align: center;
+    }
+    .description{
+        font-size: 1rem;
+        text-align: center;
+    }
+    
+    .button a{
+        font-size: .5rem;
+    }
+}
+
+.description{
+    color: #ff0000;
+}
+
+/* Estilo para el botón */
+.button button {
+    background-color: rgb(255, 0, 0); /* Fondo amarillo */
+    border: none; /* Sin bordes */
+    padding: 10px 20px; /* Ajusta el relleno según tu preferencia */
+    font-size: 18px; /* Tamaño de fuente */
+    cursor: pointer;
+    position: relative; /* Necesario para el resplandor */
+    border-radius: 20px; /* Esquinas redondeadas */
+    transition: background-color 0.3s ease-in-out; /* Transición suave para el color de fondo */
+  }
+  
+  /* Estilo para el enlace dentro del botón */
+  .button button a {
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    color: inherit; /* Hereda el color del texto del botón */
+  }
+  
+  /* Efecto de resplandor al pasar el cursor sobre el botón */
+  .button button:hover {
+    background-color: rgb(75, 0, 130); /* Cambia el color de fondo al pasar el mouse a naranja */
+    box-shadow: 0 0 10px rgb(75, 0, 130), 0 0 20px rgb(75, 0, 130), 0 0 30px rgb(75, 0, 130); /* Efecto de resplandor amarillo */
+  }
+  
+  p {
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.3); /* Sombra suave */
+    font-size: 32px;
+}
+
+/* Estilo general para el cuerpo de la página */
+body {
+    background-color: #572364; /* Fondo cálido y suave */
+    color: #ff4d4d; /* Rojo suave para el texto */
+    font-family: 'Dancing Script', 'Great Vibes', cursive; /* Tipografía cursiva romántica */
+    padding: 20px;
+}
+
+/* Estilo para los párrafos */
+p {
+    font-family: 'Dancing Script', cursive; /* Tipografía cursiva elegante */
+    font-size: 32px; /* Tamaño del texto */
+    color: #ff4d4d; /* Rojo suave */
+    line-height: 1.6; /* Espaciado entre líneas */
+    text-align: left; /* Alineación del texto */
+    text-shadow: 1px 1px 2px rgba(255, 100, 100, 0.6); /* Sombra suave */
+    padding: 10px;
+    border: 2px solid #ffcccc; /* Borde suave */
+    border-radius: 10px; /* Bordes redondeados */
+    background-color: #f3f3f3; /* Fondo suave para los párrafos */
+    animation: glow 2s ease-in-out infinite alternate; /* Efecto de brillo */
+}
+
+/* Estilo para los encabezados */
+h1 {
+    font-family: 'Great Vibes', cursive; /* Fuente cursiva para el título */
+    color: #ff6666; /* Color del encabezado */
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(255, 182, 193, 0.6); /* Sombra suave */
+}
+
+/* Animación de brillo en el texto */
+@keyframes glow {
+    from {
+        text-shadow: 0 0 5px #ff9999, 0 0 10px #ff6666, 0 0 15px #ff4d4d;
+    }
+    to {
+        text-shadow: 0 0 20px #ffcccc, 0 0 30px #ff9999, 0 0 40px #ff6666;
+    }
+}
